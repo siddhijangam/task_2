@@ -17,8 +17,10 @@ function App() {
     service3: "UI/UX Design"
   };
 
+
   return (
     <>
+     
       <Home />
       <About userData={userData} />
       <Contact />

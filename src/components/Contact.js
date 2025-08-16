@@ -1,32 +1,29 @@
 import React, { Component } from 'react';
-import { Container, Card, Navbar } from 'react-bootstrap';
+import { Container, Card, Navbar } from 'react-bootstrap'; 
 
 class Contact extends Component {
   state = {
     phone: "91+ 7385773322",
-    address: "khed shivapur, pune"
+    address: "Khed Shivapur, Pune"
   };
 
   render() {
     return (
       <>
-        {/* Simple Navbar with only Contact */}
+        
         <Navbar bg="dark" variant="dark" className="justify-content-center">
-          <Navbar.Brand>Contact</Navbar.Brand>
+        <p style ={{ color: 'white', fontSize: '26px'}}>Contact</p>
         </Navbar>
-
-        <Container className="my-4">
        
-          <Card className="text-center">
-            <Card.Img
-              variant="top"
+        <Container className="my-4 d-flex justify-content-center">
+          <Card className="text-center p-3" style={{ width: "1200px"}}>
+            <img
               src="https://img.freepik.com/premium-vector/avatar-girl-contact-us-information-service-vector-illustration_1195-555.jpg"
-              style={{ width: "200px", height: "200px", marginLeft: "auto", marginRight: "auto" }}
+              alt="Contact"
+              style={{ width: "200px", height: "200px", margin: "0 auto 15px auto" }}
             />
-            <Card.Body>
-              <Card.Text><b>Phone:</b> {this.state.phone}</Card.Text>
-              <Card.Text><b>Address:</b> {this.state.address}</Card.Text>
-            </Card.Body>
+            <h5><b>Phone:</b> {this.state.phone}</h5>
+            <h5><b>Address:</b> {this.state.address}</h5>
           </Card>
         </Container>
       </>

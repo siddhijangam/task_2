@@ -4,24 +4,22 @@ import { Container, Card, Navbar } from 'react-bootstrap';
 const About = ({ userData }) => {
   return (
     <>
-      {/* Simple Navbar with only About */}
-      <Navbar bg="dark" variant="dark" className="justify-content-center">
-        <Navbar.Brand>About</Navbar.Brand>
-      </Navbar>
+      
+          <Navbar bg="dark" variant="dark" className="justify-content-center">
+             <p style ={{ color: 'white', fontSize: '26px'}}>About</p>
+             </Navbar>
 
-      <Container className="my-4">
-       {/* <h2 className="text-center mb-4">About</h2> */}
-        <Card className="text-center">
-          <Card.Img
-            variant="top"
+      
+      <Container className="my-4 d-flex justify-content-center">
+        <Card className="text-center p-3" style={{width: "1200px" }}>
+          <img
             src="https://i.pinimg.com/736x/8c/6d/db/8c6ddb5fe6600fcc4b183cb2ee228eb7.jpg"
-            style={{ width: "300px", height: "300px", marginLeft: "auto", marginRight: "auto" }}
+            alt="About"
+            style={{ width: "300px", height: "300px", margin: "0 auto 15px auto" }}
           />
-          <Card.Body>
-            <Card.Title>{userData.name}</Card.Title>
-            <Card.Text><b>Email: </b>{userData.email}</Card.Text>
-            <Card.Text><b>Role: </b>{userData.role}</Card.Text>
-          </Card.Body>
+          <h5>{userData.name}</h5>
+          <p><b>Email: </b>{userData.email}</p>
+          <p><b>Role: </b>{userData.role}</p>
         </Card>
       </Container>
     </>

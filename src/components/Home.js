@@ -5,7 +5,7 @@ import NavbarComp from './NavbarComp';
 const Home = () => {
   return (
     <>
-      <NavbarComp />
+       <NavbarComp />
       <Container 
         className="my-4 d-flex justify-content-center align-items-center" 
         style={{
@@ -22,10 +22,10 @@ const Home = () => {
           className="text-center p-4" 
           style={{ backgroundColor: "rgba(255, 255, 255, 0.69)", border: "none" }}
         >
-          <Card.Title style={{ fontSize: "2rem", fontWeight: "bold" }}>Welcome to My App</Card.Title>
-          <Card.Text style={{ fontSize: "1.2rem" }}>
+          <h1 style={{ fontSize: "2rem", fontWeight: "bold" }}>Welcome to My App</h1>
+          <h3 style={{ fontSize: "1.2rem" }}>
             This is a simple React app with Bootstrap styling.
-          </Card.Text>
+          </h3>
         </Card>
       </Container>
     </>
